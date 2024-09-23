@@ -17,7 +17,7 @@ CREATE table product (
 
 	id INT IDENTITY(1,1),
 	description varchar(500) NOT NULL,
-	value decimal NOT NULL,
+	value decimal(10,2) NOT NULL,
 	notes varchar(200) NULL
 )
 

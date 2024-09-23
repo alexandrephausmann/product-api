@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dados\\Documentos\\Alexandre\\Fiap\\Fase 1\\2 - Desenvolvimento com .NET 8\\Desafio de API\\ProductAPI\\ProductAPI\\ProductAPI.csproj": {}
+    "D:\\Dados\\Documentos\\Alexandre\\Fiap\\Fase 1\\2 - Desenvolvimento com .NET 8\\product-api\\ProductAPI\\ProductAPI\\ProductAPI.csproj": {}
   },
   "projects": {
-    "D:\\Dados\\Documentos\\Alexandre\\Fiap\\Fase 1\\2 - Desenvolvimento com .NET 8\\Desafio de API\\ProductAPI\\ProductAPI\\ProductAPI.csproj": {
+    "D:\\Dados\\Documentos\\Alexandre\\Fiap\\Fase 1\\2 - Desenvolvimento com .NET 8\\product-api\\ProductAPI\\ProductAPI\\ProductAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dados\\Documentos\\Alexandre\\Fiap\\Fase 1\\2 - Desenvolvimento com .NET 8\\Desafio de API\\ProductAPI\\ProductAPI\\ProductAPI.csproj",
+        "projectUniqueName": "D:\\Dados\\Documentos\\Alexandre\\Fiap\\Fase 1\\2 - Desenvolvimento com .NET 8\\product-api\\ProductAPI\\ProductAPI\\ProductAPI.csproj",
         "projectName": "ProductAPI",
-        "projectPath": "D:\\Dados\\Documentos\\Alexandre\\Fiap\\Fase 1\\2 - Desenvolvimento com .NET 8\\Desafio de API\\ProductAPI\\ProductAPI\\ProductAPI.csproj",
+        "projectPath": "D:\\Dados\\Documentos\\Alexandre\\Fiap\\Fase 1\\2 - Desenvolvimento com .NET 8\\product-api\\ProductAPI\\ProductAPI\\ProductAPI.csproj",
         "packagesPath": "C:\\Users\\samsung\\.nuget\\packages\\",
-        "outputPath": "D:\\Dados\\Documentos\\Alexandre\\Fiap\\Fase 1\\2 - Desenvolvimento com .NET 8\\Desafio de API\\ProductAPI\\ProductAPI\\obj\\",
+        "outputPath": "D:\\Dados\\Documentos\\Alexandre\\Fiap\\Fase 1\\2 - Desenvolvimento com .NET 8\\product-api\\ProductAPI\\ProductAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\samsung\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,14 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.1.35, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

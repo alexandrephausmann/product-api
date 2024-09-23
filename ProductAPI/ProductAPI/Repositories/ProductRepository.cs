@@ -2,6 +2,7 @@
 using ProductAPI.Models;
 using ProductAPI.Repositories.Interfaces;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace ProductAPI.Repositories
 {
@@ -13,7 +14,7 @@ namespace ProductAPI.Repositories
         {
             _dbConnection = dbConnection;
         }
-
+        
         public Product CreateProduct(Product product)
         {
             var SqlCommand = @"
@@ -26,7 +27,7 @@ namespace ProductAPI.Repositories
 
             return product;
         }
-
+        
         public void DeleteProduct(int idProduct)
         {
             var product = GetProductById(idProduct);
@@ -52,9 +53,13 @@ namespace ProductAPI.Repositories
             return _dbConnection.Query<Product>(comandoSql).ToArray();
         }
 
-        public Product UpdateProduct(Product product)
+        public void UpdateProduct(Product product)
         {
-            throw new NotImplementedException();
+            var comandoSql = @"UPDATE product
+                              SET description = @description,value = @value, notes = @notes
+                              WHERE id = @ID";
+
+            _dbConnection.Execute(comandoSql, new { description = product.Description, value = product.Value, notes = product.Notes, id = product.Id });
         }
     }
 }

@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProductAPI</name>
+    </assembly>
+    <members>
+        <member name="M:ProductAPI.Controllers.ProductController.GetProducts">
+            <summary>
+            Get all products from Fiap marketplace
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProductAPI.Controllers.ProductController.GetProductById(System.Int32)">
+            <summary>
+            Get a product from Fiap marketplace by ID
+            </summary>
+            <param name="productId"></param>
+            <returns></returns>
+            <response code="204">Fail to find the product</response>
+            <response code="200">Success</response>
+        </member>
+        <member name="M:ProductAPI.Controllers.ProductController.CreateProduct(ProductAPI.Models.Product)">
+            <summary>
+            Create a new product in Fiap marketplace
+            </summary>
+            <param name="product"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProductAPI.Controllers.ProductController.DeleteProduct(System.Int32)">
+            <summary>
+            Delete a product in Fiap marketplace
+            </summary>
+            <param name="productId"></param>
+            <returns></returns>
+            <response code="204">Success</response>
+        </member>
+        <member name="M:ProductAPI.Controllers.ProductController.UpdateProduct(ProductAPI.Models.Product)">
+            <summary>
+            Update a product in Fiap marketplace
+            </summary>
+            <param name="product"></param>
+            <returns></returns>
+            <response code="204">Success</response>
+        </member>
+        <member name="M:ProductAPI.Controllers.TokenController.Post(ProductAPI.Models.User)">
+            <summary>
+            Generates a JWT token to use in all endpoints
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProductAPI.Repositories.Interfaces.IProductRepository.GetProducts">
+            <summary>
+            Get all products from the database.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProductAPI.Repositories.Interfaces.IProductRepository.GetProductById(System.Int32)">
+            <summary>
+            Get product from database based in the product Id.
+            </summary>
+            <param name="productId"></param>
+            <returns>Product</returns>
+        </member>
+        <member name="M:ProductAPI.Repositories.Interfaces.IProductRepository.CreateProduct(ProductAPI.Models.Product)">
+            <summary>
+            Create a product for FIAP Marketplace.
+            </summary>
+            <param name="product">Product</param>
+            <returns>Product with updated Id.</returns>
+        </member>
+        <member name="M:ProductAPI.Repositories.Interfaces.IProductRepository.DeleteProduct(System.Int32)">
+            <summary>
+            Delete Product by Id.
+            </summary>
+            <param name="idProduct">Database product Id.</param>
+        </member>
+        <member name="M:ProductAPI.Repositories.Interfaces.IProductRepository.UpdateProduct(ProductAPI.Models.Product)">
+            <summary>
+            Update the entire product on database.
+            </summary>
+            <param name="product"></param>
+        </member>
+        <member name="M:ProductAPI.Services.Interfaces.IProductService.GetProducts">
+            <summary>
+            Get all products from the database.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProductAPI.Services.Interfaces.IProductService.GetProductById(System.Int32)">
+            <summary>
+            Get product from database based in the product Id.
+            </summary>
+            <param name="productId"></param>
+            <returns>Product</returns>
+        </member>
+        <member name="M:ProductAPI.Services.Interfaces.IProductService.CreateProduct(ProductAPI.Models.Product)">
+            <summary>
+            Create a product for FIAP Marketplace.
+            </summary>
+            <param name="product">Product</param>
+            <returns>Product with updated Id.</returns>
+        </member>
+        <member name="M:ProductAPI.Services.Interfaces.IProductService.DeleteProduct(System.Int32)">
+            <summary>
+            Delete Product by Id.
+            </summary>
+            <param name="idProduct">Database product Id.</param>
+        </member>
+        <member name="M:ProductAPI.Services.Interfaces.IProductService.UpdateProduct(ProductAPI.Models.Product)">
+            <summary>
+            Update the entire product on database.
+            </summary>
+            <param name="product"></param>
+        </member>
+    </members>
+</doc>

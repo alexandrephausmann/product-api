@@ -32,9 +32,9 @@ namespace ProductAPI.Services
             return _productRepository.GetProducts();
         }
 
-        public Product UpdateProduct(Product product)
+        public void UpdateProduct(Product product)
         {
-            throw new NotImplementedException();
+            _productRepository.UpdateProduct(product);
         }
     }
 }
